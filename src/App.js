@@ -4,12 +4,13 @@ import { Balance } from './components/Balance';
 import { IncomeBalance } from './components/IncomeBalance';
 import { TransectionList } from './components/TransectionList';
 import { AddTransection } from './components/AddTransection';
+import { GlobalProvider } from './ContextAPI/GlobalContext'
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <GlobalProvider>
       <Header />
       <div className='container'>
         <Balance />
@@ -17,7 +18,7 @@ function App() {
       <IncomeBalance />
       <TransectionList />
       <AddTransection />
-    </div>
+    </GlobalProvider>
   );
 }
 
