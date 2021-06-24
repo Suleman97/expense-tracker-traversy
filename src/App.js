@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Balance } from './components/Balance';
 import { IncomeBalance } from './components/IncomeBalance';
 import { TransectionList } from './components/TransectionList';
+import { AddTransection } from './components/AddTransection';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       </div>
       <IncomeBalance />
       <TransectionList />
+      <AddTransection />
     </div>
   );
 }
